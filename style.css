@@ -1,0 +1,45 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #dbdbdb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+.fields-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Import</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Imported Data</h1>
+    <div class="grid-container">
+        <div class="grid-item file-upload">
+            <h2>Step 1: Select File</h2>
+            <div class="input-container">
+                <input type="file">
+                <h4>Supported file types: .csv, .json</h4>
+            </div>
+        </div>
+        <div class="grid-item file-options">
+            <h2>Step 2: Specify Format</h2>
+            <div class="input-container">
+                <label for="file-type">File Type:</label>
+                <select id="file-type">
+                    <option value="csv">CSV</option>
+                    <option value="json">JSON</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="chare">Character Encoding</label>
+                <select id="chare">
+                    <option value="utf-8">UTF-8</option>
+                    <option value="iso-8859-1">ISO-8859-1</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="delimiter">Select Delimiter:</label>
+                <select id="delimiter">
+                    <option value=",">Comma (,)</option>
+                    <option value="\t">Tab (\t)</option>
+                    <option value="|">Pipe (|)</option>
+                    <option value=";">Semicolon (;)</option>
+                    <option value=":">Colon (:)</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="has-header">Has Header</label>
+                <input type="checkbox" id="has-header">
+            </div>
+        </div>
+        <div class="grid-item imported-data">
+            <h2>Step 3: Display Handling</h2>
+            <div class="fields-container">
+                <div>
+                    <label for="available-fields">Available Fields:</label>
+                    <select id="available-fields" multiple></select>
+                </div>
+                <div class="button-container">
+                    <button id="add-field">&gt;&gt;</button>
+                    <button id="remove-field">&lt;&lt;</button>
+                </div>
+                <div>
+                    <label for="display-fields">Fields to be Displayed:</label>
+                    <select id="display-fields" multiple></select>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="script.js"></script>
+    </div>
+
+
+</body>
+
+</html>
